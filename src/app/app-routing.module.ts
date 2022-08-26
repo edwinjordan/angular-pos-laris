@@ -2,9 +2,9 @@ import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { NbAuthComponent } from '@nebular/auth';
 import { LoginComponent } from './auth/login/login.component';
-//import { RegisterComponent } from './auth/register/register.component';
 
 import { AuthGuard } from "./services/auth.guard";
+import { PosComponent } from './pages/pos/pos.component';
 
 const routes: Routes = [
   {
@@ -26,6 +26,10 @@ const routes: Routes = [
       //   component: RegisterComponent,
       // },
     ],
+  },
+  {
+    path: 'pos',
+    component: PosComponent
   },
   { path: '', redirectTo: 'auth', pathMatch: 'full' },
   { path: '**', redirectTo: 'auth' },

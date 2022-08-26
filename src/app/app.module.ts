@@ -26,13 +26,18 @@ import {
   NbToastrModule,
   NbSpinnerModule,
   NbAlertModule,
-  NbSelectModule
+  NbSelectModule,
+  NbLayoutModule,
+  NbCardModule,
+  NbIconModule,
+  NbTabsetModule,
 } from '@nebular/theme';
 //import { RegisterComponent } from './auth/register/register.component';
 import { LoginComponent } from './auth/login/login.component';
+import { PosComponent } from './pages/pos/pos.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent],
+  declarations: [AppComponent, LoginComponent, PosComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -43,6 +48,10 @@ import { LoginComponent } from './auth/login/login.component';
     NbButtonModule,
     NbInputModule,
     NbSelectModule,
+    NbLayoutModule,
+    NbTabsetModule,
+    NbIconModule,
+    NbCardModule,
     ThemeModule.forRoot(),
     NbSidebarModule.forRoot(),
     NbMenuModule.forRoot(),

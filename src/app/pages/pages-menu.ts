@@ -50,9 +50,9 @@ export const MENU_ITEMS: NbMenuItem[] = [
     ],
   },
   {
-    title: 'Slider',
+    title: 'Transaksi Penjualan',
     icon: 'grid-outline',
-    link: '/pages/slider',
+    link: '/pos',
   },
   {
     title: 'Setup',
